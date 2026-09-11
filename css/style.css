@@ -12,11 +12,25 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --background: #0a0a0a;
+    --surface: #080808;
+    --text: #f5f5f5;
+    --muted: #999;
+    --subtle: #666;
+    --border: #222;
+    --border-light: #333;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #0a0a0a;
-    color: #f5f5f5;
+
+    background: var(--background);
+    color: var(--text);
+
     line-height: 1.6;
+
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -631,11 +645,10 @@ footer {
 }
 
 /* =========================================
-   LIGHT THEME
+   LIGHT MODE
 ========================================= */
 
 body.light-theme {
-
     --background: #f5f5f5;
     --surface: #ffffff;
     --text: #111111;
@@ -643,8 +656,125 @@ body.light-theme {
     --subtle: #777777;
     --border: #dddddd;
     --border-light: #cccccc;
-
 }
+
+
+/* Elements that need to change with the theme */
+
+body.light-theme .navbar {
+    background: rgba(245, 245, 245, 0.85);
+    border-color: var(--border);
+}
+
+body.light-theme .nav-links {
+    background: var(--background);
+}
+
+body.light-theme .nav-links a {
+    color: var(--muted);
+}
+
+body.light-theme .nav-links a:hover {
+    color: var(--text);
+}
+
+body.light-theme .logo {
+    border-color: var(--border-light);
+}
+
+body.light-theme .theme-toggle,
+body.light-theme .menu-toggle {
+    color: var(--text);
+    border-color: var(--border-light);
+}
+
+body.light-theme .section,
+body.light-theme .project-card,
+body.light-theme footer {
+    border-color: var(--border);
+}
+
+body.light-theme .projects-section {
+    background: var(--surface);
+}
+
+body.light-theme .skill-group {
+    background: var(--background);
+}
+
+body.light-theme .skills-grid {
+    background: var(--border);
+}
+
+body.light-theme .skill-list span {
+    border-color: var(--border-light);
+    color: var(--muted);
+}
+
+body.light-theme .project-tech span {
+    background: #eeeeee;
+    border-color: var(--border-light);
+    color: #555;
+}
+
+body.light-theme .project-link {
+    color: var(--text);
+    border-color: var(--border-light);
+}
+
+body.light-theme .project-type,
+body.light-theme .project-number,
+body.light-theme .section-label {
+    color: var(--subtle);
+}
+
+body.light-theme .hero-description,
+body.light-theme .about-content p,
+body.light-theme .project-content > p:not(.project-type),
+body.light-theme .contact-section > .container > p:not(.section-label) {
+    color: var(--muted);
+}
+
+body.light-theme .btn-secondary {
+    border-color: var(--border-light);
+    color: var(--text);
+}
+
+
+/* =========================================
+   SCROLL REVEAL ANIMATIONS
+========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Stagger project animations */
+
+.project-card.reveal:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.project-card.reveal:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.project-card.reveal:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+
 
 
 
