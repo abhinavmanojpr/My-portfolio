@@ -27,26 +27,57 @@
          NAVIGATION
     ========================== -->
 
-    <header class="navbar">
+   ```html
+<header class="navbar">
 
-        <div class="container nav-container">
+    <div class="container nav-container">
 
-            <a href="#" class="logo">
-                AM
-            </a>
+        <!-- Logo -->
+        <a href="#" class="logo">
+            AM
+        </a>
 
-            <nav class="nav-links">
 
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+        <!-- Desktop Navigation -->
+        <nav class="nav-links" id="navLinks">
 
-            </nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+
+            <!-- Theme Toggle -->
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                aria-label="Toggle theme"
+            >
+                ☀
+            </button>
+
+
+            <!-- Mobile Menu Button -->
+            <button
+                id="menuToggle"
+                class="menu-toggle"
+                aria-label="Toggle navigation"
+            >
+                ☰
+            </button>
 
         </div>
 
-    </header>
+    </div>
+
+</header>
+```
+
 
 
     <!-- =========================
