@@ -1,93 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <!-- Makes the website responsive on phones and tablets -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <!-- Browser tab title -->
-    <title>Abhinav M | Backend Engineer</title>
-
-    <!-- Website description for search engines -->
     <meta
         name="description"
         content="Abhinav M — Backend Engineer specializing in Java, Spring Boot, REST APIs, security, and database-driven applications."
     >
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta
+        name="author"
+        content="Abhinav M"
+    >
+
+    <title>Abhinav M | Backend Engineer</title>
+
+    <link
+    rel="icon"
+    type="image/svg+xml"
+    href="favicon.svg"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 </head>
+
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
 
-<header class="navbar">
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-    <div class="container nav-container">
+    <header class="navbar">
 
-        <!-- Logo -->
-        <a href="#" class="logo">
-            AM
-        </a>
+        <div class="container nav-container">
 
-
-        <!-- Desktop Navigation -->
-        <nav class="nav-links" id="navLinks">
-
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-
-        <!-- Navigation Actions -->
-        <div class="nav-actions">
-
-            <!-- Theme Toggle -->
-            <button
-                id="themeToggle"
-                class="theme-toggle"
-                aria-label="Toggle theme"
+            <a
+                href="#home"
+                class="logo"
             >
-                ☀
-            </button>
+                AM
+            </a>
 
 
-            <!-- Mobile Menu Button -->
+            <!-- Desktop Navigation -->
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#experience">
+                    Experience
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Mobile Menu -->
+
             <button
                 id="menuToggle"
                 class="menu-toggle"
-                aria-label="Toggle navigation"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                type="button"
             >
                 ☰
             </button>
 
         </div>
 
-    </div>
-
-</header>
+    </header>
 
 
 
-
-    <!-- =========================
-         HERO SECTION
-    ========================== -->
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
     <main>
 
-        <section class="hero">
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section
+            id="home"
+            class="hero"
+        >
 
             <div class="container hero-container">
+
+
+                <!-- Hero Content -->
 
                 <div class="hero-content">
 
@@ -95,27 +134,101 @@
                         BACKEND ENGINEER
                     </p>
 
+
                     <h1>
-                        Building secure,
-                        <span>scalable</span>
-                        systems.
+                        Building reliable
+                        <span>
+                            backend systems.
+                        </span>
                     </h1>
 
+
                     <p class="hero-description">
-                        Computer Science graduate and Java Backend Developer
-                        focused on building secure, scalable, and reliable
-                        software systems.
+                        I'm Abhinav M, a Computer Science graduate
+                        and Backend Engineer focused on building
+                        secure, scalable, and maintainable
+                        applications with Java and Spring Boot.
                     </p>
 
-                    <div class="hero-buttons">
 
-                        <a href="#projects" class="btn btn-primary">
-                            View Projects
-                        </a>
+                   <div class="hero-buttons">
 
-                        <a href="#contact" class="btn btn-secondary">
-                            Contact Me
-                        </a>
+    <a
+        href="#projects"
+        class="btn btn-primary"
+    >
+        Explore My Work
+    </a>
+
+    <a
+        href="assets/Abhinav_M_SDE.pdf"
+        class="btn btn-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        View Resume ↗
+    </a>
+
+    <a
+        href="#contact"
+        class="btn btn-secondary"
+    >
+        Get in Touch
+    </a>
+
+</div>
+
+                </div>
+
+
+
+                <!-- Profile -->
+
+                <div class="hero-profile">
+
+                    <div class="profile-photo">
+
+                        <!--
+                            Replace this placeholder with:
+
+                            <img
+                                src="images/profile.jpg"
+                                alt="Abhinav M"
+                            >
+                        -->
+
+                       <div class="profile-photo">
+
+                    <img
+                    src="images/Abhinav_M.jpeg"
+                    alt="Abhinav M"
+                    >
+
+                    </div>
+
+                    </div>
+
+
+                    <div class="profile-info">
+
+                        <h2>
+                            Abhinav M
+                        </h2>
+
+                        <p>
+                            Backend Engineer
+                        </p>
+
+                    </div>
+
+
+                    <div class="profile-status">
+
+                        <span class="status-dot"></span>
+
+                        <span>
+                            Open to Opportunities
+                        </span>
 
                     </div>
 
@@ -126,11 +239,15 @@
         </section>
 
 
-        <!-- =========================
-             ABOUT SECTION
-        ========================== -->
 
-        <section id="about" class="section reveal">
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="section reveal"
+        >
 
             <div class="container">
 
@@ -138,30 +255,104 @@
                     01 — ABOUT
                 </p>
 
-                <h2>
-                    Engineering with purpose.
-                </h2>
 
-                <div class="about-content">
+                <div class="section-heading">
 
-                    <p>
-                        I'm a Computer Science graduate and Backend Engineer
-                        specializing in Java and Spring Boot. I enjoy
-                        transforming complex business requirements into
-                        secure, scalable, and maintainable backend systems.
-                    </p>
+                    <h2>
+                        Building systems
+                        <br>
+                        with purpose.
+                    </h2>
 
-                    <p>
-                        My experience includes building RESTful APIs,
-                        implementing authentication and authorization,
-                        and developing database-driven applications.
-                    </p>
 
-                    <p>
-                        I'm currently expanding my knowledge of AWS, DevOps,
-                        CI/CD, and distributed systems with the goal of
-                        building production-grade applications.
-                    </p>
+                    <div class="heading-description">
+
+                        <p>
+                          I build purposeful, scalable solutions that turn ideas into meaningful digital experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="about-grid">
+
+
+                    <div class="about-main">
+
+                        <p>
+                           I’m a passionate and motivated professional who enjoys turning ideas into meaningful, well-crafted digital experiences. I’m constantly curious about new technologies, creative problem-solving, and opportunities to learn and grow.
+
+I believe in writing clean, efficient, and purposeful work while maintaining a strong focus on user experience and attention to detail. I enjoy taking on challenging projects, collaborating with others, and transforming concepts into practical solutions.
+
+Beyond my technical skills, I value continuous learning, adaptability, and a growth mindset. I’m always looking for opportunities to improve my skills, explore new ideas, and contribute to projects that create real impact.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="focus-card">
+
+                        <p class="card-label">
+                            CURRENT FOCUS
+                        </p>
+
+
+                        <div class="focus-item">
+
+                            <span>
+                                01
+                            </span>
+
+                            <strong>
+                                Backend Engineering
+                            </strong>
+
+                        </div>
+
+
+                        <div class="focus-item">
+
+                            <span>
+                                02
+                            </span>
+
+                            <strong>
+                                REST API Development
+                            </strong>
+
+                        </div>
+
+
+                        <div class="focus-item">
+
+                            <span>
+                                03
+                            </span>
+
+                            <strong>
+                                Secure Application Design
+                            </strong>
+
+                        </div>
+
+
+                        <div class="focus-item">
+
+                            <span>
+                                04
+                            </span>
+
+                            <strong>
+                                Database Architecture
+                            </strong>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -170,11 +361,15 @@
         </section>
 
 
-        <!-- =========================
-             SKILLS SECTION
-        ========================== -->
 
-        <section id="skills" class="section reveal">
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section
+            id="skills"
+            class="section section-alt reveal"
+        >
 
             <div class="container">
 
@@ -182,67 +377,197 @@
                     02 — SKILLS
                 </p>
 
-                <h2>
-                    Technologies I work with.
-                </h2>
+
+                <div class="section-heading">
+
+                    <h2>
+                        Technologies
+                        <br>
+                        I work with.
+                    </h2>
+
+
+                    <p>
+                        A growing toolkit focused on backend
+                        development, security, databases,
+                        and reliable software systems.
+                    </p>
+
+                </div>
+
+
 
                 <div class="skills-grid">
 
-                    <div class="skill-group">
 
-                        <h3>Backend</h3>
+                    <!-- Backend -->
 
-                        <div class="skill-list">
+                    <article class="skill-card">
+
+                        <span class="skill-number">
+                            01
+                        </span>
+
+
+                        <h3>
+                            Backend Development
+                        </h3>
+
+
+                        <p>
+                            Building structured server-side
+                            applications and RESTful services.
+                        </p>
+
+
+                        <div class="skill-tags">
+
                             <span>Java</span>
                             <span>Python</span>
                             <span>Spring Boot</span>
                             <span>Spring MVC</span>
                             <span>REST APIs</span>
+                            <span>Docker</span>
                         </div>
 
-                    </div>
+                    </article>
 
 
-                    <div class="skill-group">
 
-                        <h3>Security</h3>
+                    <!-- Security -->
 
-                        <div class="skill-list">
+                    <article class="skill-card">
+
+                        <span class="skill-number">
+                            02
+                        </span>
+
+
+                        <h3>
+                            Security
+                        </h3>
+
+
+                        <p>
+                            Designing authentication and
+                            authorization mechanisms for
+                            secure applications.
+                        </p>
+
+
+                        <div class="skill-tags">
+
                             <span>Spring Security</span>
                             <span>JWT</span>
                             <span>BCrypt</span>
                             <span>Authentication</span>
+                            <span>Authorization</span>
+                            <span>RBAC</span>
+
                         </div>
 
-                    </div>
+                    </article>
 
 
-                    <div class="skill-group">
 
-                        <h3>Database</h3>
+                    <!-- Database -->
 
-                        <div class="skill-list">
+                    <article class="skill-card">
+
+                        <span class="skill-number">
+                            03
+                        </span>
+
+
+                        <h3>
+                            Data & Persistence
+                        </h3>
+
+
+                        <p>
+                            Working with relational databases,
+                            ORM frameworks, and structured data.
+                        </p>
+
+
+                        <div class="skill-tags">
+
                             <span>PostgreSQL</span>
                             <span>SQL</span>
                             <span>JPA</span>
                             <span>Hibernate</span>
+                            <span>Firebase</span>
+
                         </div>
 
-                    </div>
+                    </article>
 
 
-                    <div class="skill-group">
 
-                        <h3>Tools</h3>
+                    <!-- Tools -->
 
-                        <div class="skill-list">
+                    <article class="skill-card">
+
+                        <span class="skill-number">
+                            04
+                        </span>
+
+
+                        <h3>
+                            Tools & Workflow
+                        </h3>
+
+
+                        <p>
+                            Tools I use for development, testing,
+                            version control, and project workflows.
+                        </p>
+
+
+                        <div class="skill-tags">
+
                             <span>Git</span>
                             <span>GitHub</span>
                             <span>Maven</span>
                             <span>Postman</span>
+
                         </div>
 
-                    </div>
+                    </article>
+
+
+
+                    <!-- Exploring -->
+
+                    <article class="skill-card skill-card-wide">
+
+                        <span class="skill-number">
+                            05
+                        </span>
+
+
+                        <h3>
+                            Currently Exploring
+                        </h3>
+
+
+                        <p>
+                            Expanding from application development
+                            into cloud infrastructure and
+                            production systems.
+                        </p>
+
+
+                        <div class="skill-tags">
+
+                            <span>AWS</span>
+                            <span>CI/CD</span>
+                            <span>System Design</span>
+                            <span>Cloud Architecture</span>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -251,11 +576,15 @@
         </section>
 
 
-        <!-- =========================
-             PROJECTS SECTION
-        ========================== -->
 
-        <section id="projects" class="section projects-section reveal">
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section
+            id="projects"
+            class="section reveal"
+        >
 
             <div class="container">
 
@@ -263,35 +592,108 @@
                     03 — PROJECTS
                 </p>
 
-                <h2>
-                    Things I've built.
-                </h2>
+
+                <div class="section-heading">
+
+                    <h2>
+                        Things I've built.
+                    </h2>
 
 
-                <!-- PROJECT 01 -->
+                    <p>
+                        A selection of projects where I explored
+                        backend engineering, security, databases,
+                        IoT, and machine learning.
+                    </p>
 
-                <article class="project-card reveal">
+                </div>
+
+
+
+                <!-- Project 01 -->
+
+                <article class="project-card">
 
                     <div class="project-number">
                         01
                     </div>
 
+
                     <div class="project-content">
 
-                        <p class="project-type">
-                            BACKEND ENGINEERING
-                        </p>
+                        <div class="project-top">
+
+                            <p class="project-type">
+                                BACKEND ENGINEERING
+                            </p>
+
+
+                            <span class="project-status">
+                                COMPLETED
+                            </span>
+
+                        </div>
+
 
                         <h3>
                             Digital Banking Backend
                         </h3>
 
-                        <p>
-                            A secure banking backend built with Java,
-                            Spring Boot, and PostgreSQL supporting
-                            authentication, customer management,
-                            account management, and financial transactions.
+
+                        <p class="project-description">
+                            A secure banking backend designed to
+                            handle authentication, customer management,
+                            accounts, balances, and financial
+                            transactions through RESTful APIs.
                         </p>
+
+
+                        <div class="project-highlights">
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    01
+                                </span>
+
+                                <p>
+                                    JWT authentication with Spring
+                                    Security and BCrypt password
+                                    encryption.
+                                </p>
+
+                            </div>
+
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    02
+                                </span>
+
+                                <p>
+                                    Account ownership validation
+                                    and secure transaction handling.
+                                </p>
+
+                            </div>
+
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    03
+                                </span>
+
+                                <p>
+                                    Layered Controller → Service →
+                                    Repository architecture.
+                                </p>
+
+                            </div>
+
+                        </div>
+
 
                         <div class="project-tech">
 
@@ -301,8 +703,10 @@
                             <span>JWT</span>
                             <span>PostgreSQL</span>
                             <span>JPA</span>
+                            <span>Hibernate</span>
 
                         </div>
+
 
                         <a
                             href="https://github.com/abhinavmanojpr/digital-banking"
@@ -310,7 +714,13 @@
                             rel="noopener noreferrer"
                             class="project-link"
                         >
-                            View on GitHub →
+                            <span>
+                                View Source
+                            </span>
+
+                            <span class="project-arrow">
+                                ↗
+                            </span>
                         </a>
 
                     </div>
@@ -318,41 +728,103 @@
                 </article>
 
 
-                <!-- PROJECT 02 -->
 
-                <article class="project-card reveal">
+                <!-- Project 02 -->
+
+                <article class="project-card">
 
                     <div class="project-number">
                         02
                     </div>
 
+
                     <div class="project-content">
 
-                        <p class="project-type">
-                            IOT · MACHINE LEARNING
-                        </p>
+                        <div class="project-top">
+
+                            <p class="project-type">
+                                IOT · MACHINE LEARNING
+                            </p>
+
+
+                            <span class="project-status">
+                                COMPLETED
+                            </span>
+
+                        </div>
+
 
                         <h3>
                             Smart Energy Management System
                         </h3>
 
-                        <p>
+
+                        <p class="project-description">
                             An AI-powered IoT platform that monitors
-                            electricity consumption, forecasts energy usage,
-                            predicts bills, detects appliance faults,
-                            and provides energy-saving recommendations.
+                            appliance-level electricity consumption,
+                            forecasts future energy usage, predicts
+                            electricity bills, and detects potential faults.
                         </p>
+
+
+                        <div class="project-highlights">
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    01
+                                </span>
+
+                                <p>
+                                    ESP32-based real-time appliance
+                                    energy monitoring.
+                                </p>
+
+                            </div>
+
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    02
+                                </span>
+
+                                <p>
+                                    LSTM-based energy forecasting
+                                    and electricity bill prediction.
+                                </p>
+
+                            </div>
+
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    03
+                                </span>
+
+                                <p>
+                                    Fault detection and energy-saving
+                                    recommendations.
+                                </p>
+
+                            </div>
+
+                        </div>
+
 
                         <div class="project-tech">
 
-                            <span>Python</span>
+                            <span>ESP32</span>
+                            <span>Firebase</span>
                             <span>Flask</span>
                             <span>React</span>
                             <span>TensorFlow</span>
-                            <span>Firebase</span>
-                            <span>ESP32</span>
+                            <span>Keras</span>
+                            <span>MQTT</span>
 
                         </div>
+
 
                         <a
                             href="https://github.com/abhinavmanojpr/Smart_Energy_Management_System"
@@ -360,7 +832,13 @@
                             rel="noopener noreferrer"
                             class="project-link"
                         >
-                            View on GitHub →
+                            <span>
+                                View Source
+                            </span>
+
+                            <span class="project-arrow">
+                                ↗
+                            </span>
                         </a>
 
                     </div>
@@ -368,46 +846,100 @@
                 </article>
 
 
-                <!-- PROJECT 03 -->
 
-                <article class="project-card reveal">
+                <!-- Project 03 -->
+
+                <article class="project-card">
 
                     <div class="project-number">
                         03
                     </div>
 
+
                     <div class="project-content">
 
-                        <p class="project-type">
-                            FULL-STACK · SECURITY
-                        </p>
+                        <div class="project-top">
+
+                            <p class="project-type">
+                                FULL-STACK · SECURITY
+                            </p>
+
+
+                            <span class="project-status">
+                                PROJECT
+                            </span>
+
+                        </div>
+
 
                         <h3>
-                            Collaborative Photo Platform
+                            Collaborative Photo-Sharing Platform
                         </h3>
 
-                        <p>
-                            A full-stack platform that allows photography
-                            teams to collaboratively upload, organize,
-                            review, and securely publish event galleries.
+
+                        <p class="project-description">
+                            A platform designed for photography and
+                            event teams to collaboratively upload,
+                            organize, review, and securely publish
+                            event galleries.
                         </p>
+
+
+                        <div class="project-highlights">
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    01
+                                </span>
+
+                                <p>
+                                    Role-based access for admins,
+                                    team members, and customers.
+                                </p>
+
+                            </div>
+
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    02
+                                </span>
+
+                                <p>
+                                    Secure event galleries using
+                                    shareable links and PIN protection.
+                                </p>
+
+                            </div>
+
+
+                            <div class="project-highlight">
+
+                                <span class="highlight-number">
+                                    03
+                                </span>
+
+                                <p>
+                                    Cloud object storage with
+                                    database-backed photo metadata.
+                                </p>
+
+                            </div>
+
+                        </div>
+
 
                         <div class="project-tech">
 
                             <span>REST APIs</span>
                             <span>RBAC</span>
-                            <span>Cloud Storage</span>
                             <span>Authentication</span>
+                            <span>Cloud Storage</span>
                             <span>Database Design</span>
 
                         </div>
-
-                        <a
-                            href="#"
-                            class="project-link"
-                        >
-                            View Project →
-                        </a>
 
                     </div>
 
@@ -418,49 +950,600 @@
         </section>
 
 
-        <!-- =========================
-             CONTACT SECTION
-        ========================== -->
 
-        <section id="contact" class="section contact-section reveal">
+        <!-- =================================================
+             EDUCATION
+        ================================================== -->
+
+        <section
+            id="education"
+            class="section section-alt reveal"
+        >
 
             <div class="container">
 
                 <p class="section-label">
-                    04 — CONTACT
+                    04 — ACADEMIC BACKGROUND
                 </p>
 
-                <h2>
-                    Let's build something useful.
-                </h2>
 
-                <p>
-                    I'm open to backend engineering opportunities,
-                    interesting projects, and conversations about
-                    software development.
+                <div class="section-heading">
+
+                    <h2>
+                        Education.
+                    </h2>
+
+
+                    <p>
+                        My academic journey in Computer Science,
+                        building the foundation for my work in
+                        software and backend engineering.
+                    </p>
+
+                </div>
+
+
+
+                <div class="education-timeline">
+
+
+                    <!-- B.Tech -->
+
+                    <article
+                        class="education-item education-featured"
+                    >
+
+                        <div class="education-year">
+                            2026
+                        </div>
+
+
+                        <div class="education-marker">
+                            <span></span>
+                        </div>
+
+
+                        <div class="education-card">
+
+                            <div class="education-card-top">
+
+                                <p class="education-type">
+                                    UNDERGRADUATE DEGREE
+                                </p>
+
+
+                                <span class="education-badge">
+                                    B.TECH
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                B.Tech in Computer Science
+                            </h3>
+
+
+                            <p class="education-institution">
+                                Vimal Jyothi
+                                <br>
+                                Engineering College
+                            </p>
+
+
+                            <div class="education-result">
+
+                                <span>
+                                    CGPA
+                                </span>
+
+                                <strong>
+                                    7.22
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 12th -->
+
+                    <article class="education-item">
+
+                        <div class="education-year">
+                            2022
+                        </div>
+
+
+                        <div class="education-marker">
+                            <span></span>
+                        </div>
+
+
+                        <div class="education-card">
+
+                            <div class="education-card-top">
+
+                                <p class="education-type">
+                                    HIGHER SECONDARY
+                                </p>
+
+
+                                <span class="education-badge">
+                                    12TH
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Mattanur Higher Secondary School
+                            </h3>
+
+
+                            <div class="education-result">
+
+                                <span>
+                                    SCORE
+                                </span>
+
+                                <strong>
+                                    92.17%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- 10th -->
+
+                    <article class="education-item">
+
+                        <div class="education-year">
+                            2020
+                        </div>
+
+
+                        <div class="education-marker">
+                            <span></span>
+                        </div>
+
+
+                        <div class="education-card">
+
+                            <div class="education-card-top">
+
+                                <p class="education-type">
+                                    SECONDARY EDUCATION
+                                </p>
+
+
+                                <span class="education-badge">
+                                    10TH
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Mattanur Higher Secondary School
+                            </h3>
+
+
+                            <div class="education-result">
+
+                                <span>
+                                    SCORE
+                                </span>
+
+                                <strong>
+                                    90%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section
+            id="experience"
+            class="section reveal"
+        >
+
+            <div class="container">
+
+                <p class="section-label">
+                    05 — EXPERIENCE
                 </p>
 
-                <div class="contact-links">
 
-                    <a href="mailto:your-email@example.com">
-                        Email
-                    </a>
+                <div class="section-heading">
 
-                    <a
-                        href="https://www.linkedin.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <h2>
+                        Real-world<br>
+                        experience.
+                    </h2>
+
+
+                    <p>
+                        Professional experience working with
+                        production software systems and supporting
+                        reliable application operations.
+                    </p>
+
+                </div>
+
+
+
+                <article class="experience-item">
+
+                    <div class="experience-timeline">
+
+                        <span class="timeline-dot"></span>
+
+                        <span class="timeline-line"></span>
+
+                    </div>
+
+
+                    <div class="experience-card">
+
+                        <div class="experience-header">
+
+                            <div>
+
+                                <p class="experience-type">
+                                    PROFESSIONAL EXPERIENCE
+                                </p>
+
+
+                                <h3>
+                                    Production Support Engineer
+                                </h3>
+
+
+                                <h4>
+                                    Caytm Technologies
+                                </h4>
+
+                            </div>
+
+
+                            <span class="experience-current">
+                                CURRENT ROLE
+                            </span>
+
+                        </div>
+
+
+                        <div class="experience-divider"></div>
+
+
+                        <div class="experience-body">
+
+                            <p>
+                                Working as a Production Support Engineer,
+                                gaining hands-on experience with real-world
+                                software systems, production environments,
+                                application support, and operational
+                                problem solving.
+                            </p>
+
+                        </div>
+
+
+                        <div class="experience-tags">
+
+                            <span>
+                                Production Support
+                            </span>
+
+                            <span>
+                                Application Support
+                            </span>
+
+                            <span>
+                                Problem Solving
+                            </span>
+
+                            <span>
+                                Software Systems
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BEYOND CODE
+        ================================================== -->
+
+        <section
+            id="mindset"
+            class="section mindset-section reveal"
+        >
+
+            <div class="container">
+
+                <p class="section-label">
+                    06 — BEYOND CODE
+                </p>
+
+
+                <div class="mindset-heading">
+
+                    <h2>
+                        More than
+                        <br>
+                        just code.
+                    </h2>
+
+
+                    <p>
+                        Good engineering is not only about writing
+                        code. It's about understanding problems,
+                        making thoughtful decisions, and building
+                        software that people can rely on.
+                    </p>
+
+                </div>
+
+
+
+                <div class="mindset-grid">
+
+
+                    <!-- 01 -->
+
+                    <article class="mindset-card">
+
+                        <span class="mindset-number">
+                            01
+                        </span>
+
+
+                        <h3>
+                            Problem Solving
+                        </h3>
+
+
+                        <p>
+                            I enjoy breaking complex requirements
+                            into smaller, structured problems and
+                            finding practical solutions.
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- 02 -->
+
+                    <article class="mindset-card">
+
+                        <span class="mindset-number">
+                            02
+                        </span>
+
+
+                        <h3>
+                            Continuous Learning
+                        </h3>
+
+
+                        <p>
+                            I'm continuously improving my knowledge
+                            of backend engineering and cloud technologies.
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- 03 -->
+
+                    <article
+                        class="mindset-card mindset-card-wide"
                     >
-                        LinkedIn
-                    </a>
 
-                    <a
-                        href="https://github.com/abhinavmanojpr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
+                        <div>
+
+                            <span class="mindset-number">
+                                03
+                            </span>
+
+
+                            <h3>
+                                Building for the Real World
+                            </h3>
+
+                        </div>
+
+
+                        <p>
+                            My goal is to grow from building
+                            applications to designing, deploying,
+                            and maintaining production-grade systems
+                            that are reliable, scalable, and useful.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            id="contact"
+            class="contact-section reveal"
+        >
+
+            <div class="container">
+
+                <p class="section-label">
+                    07 — CONTACT
+                </p>
+
+
+                <div class="contact-wrapper">
+
+
+                    <!-- Contact Intro -->
+
+                    <div class="contact-intro">
+
+                        <p class="contact-small">
+                            HAVE A PROJECT OR OPPORTUNITY?
+                        </p>
+
+
+                        <h2>
+                            Let's build
+                            <span>
+                                something useful.
+                            </span>
+                        </h2>
+
+
+                        <p class="contact-description">
+                            I'm open to backend engineering
+                            opportunities, interesting projects,
+                            and conversations about building
+                            reliable software systems.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Contact Links -->
+
+                    <div class="contact-panel">
+
+    <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinavmanojpr@gmail.com"
+    class="contact-link"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+
+
+
+                            <div class="contact-link-info">
+
+                                <span class="contact-label">
+                                    EMAIL
+                                </span>
+
+
+                                <strong>
+                                    abhinavmanojpr@gmail.com
+                                </strong>
+
+                            </div>
+
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="https://www.linkedin.com/in/abhinav-m04/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+
+                            <div class="contact-link-info">
+
+                                <span class="contact-label">
+                                    LINKEDIN
+                                </span>
+
+
+                                <strong>
+                                    Connect with me
+                                </strong>
+
+                            </div>
+
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+
+
+                        <a
+                            href="https://github.com/abhinavmanojpr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+
+                            <div class="contact-link-info">
+
+                                <span class="contact-label">
+                                    GITHUB
+                                </span>
+
+
+                                <strong>
+                                    View my repositories
+                                </strong>
+
+                            </div>
+
+
+                            <span class="contact-arrow">
+                                ↗
+                            </span>
+
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -471,27 +1554,85 @@
     </main>
 
 
-    <!-- =========================
+
+    <!-- =====================================================
          FOOTER
-    ========================== -->
+    ====================================================== -->
 
     <footer>
 
         <div class="container">
 
-            <p>
-                © 2026 Abhinav M. Built with HTML, CSS & JavaScript.
-            </p>
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a
+                        href="#home"
+                        class="footer-logo"
+                    >
+                        AM
+                    </a>
+
+
+                    <p>
+                        Building reliable backend systems.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#projects">
+                        Projects
+                    </a>
+
+                    <a href="#experience">
+                        Experience
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Abhinav M
+                </p>
+
+
+                <p>
+                    Backend Engineer · Java · Spring Boot
+                </p>
+
+
+                <a href="#home">
+                    Back to top ↑
+                </a>
+
+            </div>
 
         </div>
 
     </footer>
 
 
-    <!-- JavaScript -->
+
     <script src="js/script.js"></script>
 
 </body>
 
 </html>
-```
